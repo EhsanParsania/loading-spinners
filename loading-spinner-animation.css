@@ -1,0 +1,150 @@
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e4e4e4;
+}
+
+.container {
+  width: 70%;
+  height: 60%;
+  box-shadow: 0 0 20px black;
+  position: absolute;
+  background-color: white;
+}
+
+.path-1 {
+  fill: #003300;
+}
+
+.path-2 {
+  fill: #003300;
+  opacity: .8;
+}
+
+.path-3 {
+  fill: #003300;
+  opacity: .7;
+}
+
+.path-4 {
+  fill: #003300;
+  opacity: .6;
+}
+
+.path-5 {
+  fill: #003300;
+  opacity: .5;
+}
+
+.path-6 {
+  fill: #003300;
+  opacity: .4;
+}
+
+.path-7 {
+  fill: #003300;
+  opacity: .3;
+}
+
+.path-8 {
+  fill: #003300;
+  opacity: .1;
+}
+
+.spinner-1 {
+  justify-content: center;
+  height: 350px;
+  width: 350px;
+  position: relative;
+  margin: 40px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: loading-1;
+  animation-duration: 1.3s;
+}
+
+@keyframes loading-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.svg {
+  position: absolute;
+  width: 77%;
+  height: 77%;
+  transform-origin: center center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner-3 {
+  justify-content: center;
+  height: 350px;
+  width: 350px;
+  position: relative;
+  margin: 40px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.spinner-3 .spinner-3-circle {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-image: conic-gradient(white 50%, #6aafff);
+  z-index: 2;
+  animation-name: spinner-3;
+  animation-duration: 1.3s;
+}
+
+@keyframes spinner-3 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.spinner-3 .spinner-3-center {
+  position: absolute;
+  width: 38%;
+  height: 38%;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.spinner-3 .spinner-3-center .spinner-3-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+/*# sourceMappingURL=loading-spinner-animation.css.map */
